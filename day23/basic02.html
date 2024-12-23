@@ -1,0 +1,40 @@
+<!-- 2. a태그 <a></a>, img 태그 <img />-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a 태그와 img 태그</title>
+</head>
+<body>
+  <h1>태그 : 링크 태그</h1>
+  <a href="https://www.naver.com">네이버</a><br>
+  <a href="https://www.naver.com" target="_blank">네이버</a><br>
+  <a href="D:/web_0900_psh/web_4/workspace/day23/basic01.html">basic01</a><br>
+  <!-- 절대 경로 : 보안정책으로 로컬디스크 경로를 직접 열지못하도록 제한 중
+                  해서 상대경로로 작성하는 것을 추천 -->
+  <a href="./basic01.html">basic01</a></body><br><br>
+  <!-- 같은 폴더내에 있다면 상대경로(./)만 작성 -->
+
+
+  <h1>태크 : 이미지 태그</h1>
+  <img src="./image/img.jpg" alt="짱구 사진">
+  <!-- alt 속성 : 사진이 나오지 않았을 때 설명 작성 -->
+  <img src="./image/img1.jpg" alt="짱구 사진" width="150" height="100">
+
+  <h1>태크 : 이미지 태그 + a 링크 태그</h1>
+  <a href="https://www.naver.com" target="_blank">
+    <img src="./image/img1.jpg" alt="짱구 사진" width="30%">
+    <!-- 비율로도 이미지 사이즈 설정 가능 -->
+    <!-- 너비와 높이는 기본 px단위로 설정되고 %단위로도 사용 가능  -->
+  </a>
+
+  <h1>태크 : 이미지 태그 + 외부 a 링크 태그</h1>
+  <a href="https://www.naver.com" target="_blank">
+    <img src="https://i1.sndcdn.com/artworks-Z5SLEGyINrvdjrkz-CQbgFA-t500x500.jpg" alt="짱구 사진" width="150" height="100">
+  </a>
+  <!-- 링크로 넣어줄 땐 '이미지 주소 복사'로 진행 -->
+
+</body>
+</html>
