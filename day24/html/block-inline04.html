@@ -1,0 +1,62 @@
+<!-- 8. margin과 padding -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>특정 마진과 패딩 적용</title>
+  <style>
+    div {
+      background-color: lightpink;
+      border: 2px solid grey;
+      width: 100px;
+      height: 100px;
+
+      /* margin-left: 50px; */
+      /* margin: 20px auto; */
+      /* 상하 좌우 */
+      /* 마진을 조절하면 블록요소들을 화면 중앙으로 배치 가능
+      좌우를 auto로 설정하면 좌우 여백을 동일하게 맞춰줌
+      auto는 화면 크기에 따라 알아서 중앙을 정렬해줌*/
+      /* margin-bottom: 50px; */
+      /* margin : 0 0 20px 50px; */
+      /* 상 우 하 좌 - 시계방향 */
+
+      padding : 20px 0 0 0;
+      /* 상 우 하 좌 - 시계방향 */
+
+      text-align: center;
+      border-radius: 50%;
+      /* 박스 테두리를 둥글게 변경할 때는 border-radius 사용
+      값을 크게 줄수록 원형에 가까움
+      원으로 바꾸고 싶다면 px단위가 아닌 50%를 주면됨 */
+    }
+
+    .div {
+      margin : 10px;
+      padding : 50px;
+      border : 1px dotted blue;
+    }
+
+    .div2 {
+      background-color: aquamarine;
+    }
+
+    #div1 {
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="div" id="div1">1</div>
+  <div class="div div2">2</div>
+  <div class="div">3</div>
+  <div class="div">4</div>
+  <div class="div">5</div>
+  <div class="div">6</div>
+  <div class="div">7</div>
+  <div class="div">8</div>
+  <div class="div">9</div>
+  <div class="div">10</div>
+</body>
+</html>

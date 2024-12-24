@@ -1,0 +1,41 @@
+<!-- 5. CSS - 내부 스타일 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 내부 스타일</title>
+  <style>
+    /* CSS 주석
+     *은 모든 요소의 선택자
+    */
+    * {
+     background-color: lightblue; 
+     font-size: 25px;
+    }
+    /* h1 태그 선택자 */
+    h1 {
+      color : blue;
+      background-color : burlywood;
+    }
+    /* #id명 id 선택자 */
+    #span-id {
+      color: deeppink;
+    }
+    /* .class명 클래스 선택자 */
+    .p-class {
+      background-color: lavender;
+    }
+  </style>
+</head>
+<body>
+  <h1>id와 class 속성</h1>
+  <span id="span-id">span 요소 1</span>
+  <span style="color: red; background-color: beige;">span 요소 2</span>
+  <p class="p-class">p 요소 1</p>
+  <p style="color: blue; background-color: beige;">p 요소 2</p>
+  <!-- div{div $}*2 -->
+  <div class="p-class">div 요소 1</div>
+  <div style="background-color: gold;">div 요소 2</div>
+</body>
+</html>

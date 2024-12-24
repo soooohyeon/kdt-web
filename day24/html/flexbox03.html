@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네비게이션 메뉴</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: darkgreen;
+      height: 30px;
+    }
+    .menu-wrap {
+      display: flex;
+      height: 100%;
+    }
+    .menu-wrap > li {
+      margin: 0 15px;
+      padding: 5px 0 0 0;
+      list-style-type: none;
+      font-weight : bold;
+      color: white;
+    }
+    .main {
+      height: 100vh;
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <ul class="menu-wrap">
+      <li>HOME</li>
+      <li>상품목록</li>
+      <li>상품등록</li>
+      <li>주문내역</li>
+      <li>회원정보</li>
+    </ul>
+  </div>
+  <div class="main"></div>
+</body>
+</html>
