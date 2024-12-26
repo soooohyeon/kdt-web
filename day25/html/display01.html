@@ -1,0 +1,89 @@
+<!-- 1. display 속성 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display 속성</title>
+  <style>
+    * {
+      padding : 0;
+      margin : 0;
+    }
+
+    .span--inline {
+      border : 1px solid red;
+      background-color: beige;
+
+      /* display: block; */
+      /* 블록요소로 변경 가능 */
+    }
+
+    .span--block {
+      border : 1px solid blue;
+      background-color: lightcyan;
+      display : block;
+      width : 100px;
+      height : 100px;
+    }
+
+    .span--inline-blick {
+      background-color: darkgrey;
+      border : 1px solisd black;
+      display: inline-block;
+    }
+    .span--inline-block{
+      background-color: orange;
+      border: 1px solid black;
+      display: inline-block;
+      width:100px;
+      height: 100px;
+    }
+
+    .div--inline-block{
+      background-color: darkcyan;
+      border: 1px solid black;
+      display: inline-block;
+      width: 50px;
+      height: 100px;
+    }
+
+    .div--none{
+      background-color: black;
+      color: white;
+      border: 1px solid yellow;
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>display : inline</h1>
+  <!-- span.span--inline{span $}*5 -->
+  <span class="span--inline">span 1</span>
+  <span class="span--inline">span 2</span>
+  <span class="span--inline">span 3</span>
+  <span class="span--inline">span 4</span>
+  <span class="span--inline">span 5</span>
+  
+  <h1>display : block</h1>
+  <span class="span--block">span %</span>
+  <span class="span--block">span %</span>
+  <span class="span--block">span %</span>
+  <span class="span--block">span %</span>
+  <span class="span--block">span %</span>
+  
+  <h1>display : inline-block</h1>
+  <span class="span--inline-block">span %</span>
+  <span class="span--inline-block">span %</span>
+  <div class="div--inline-block">div %</div>
+  <div class="div--inline-block">div %</div>
+
+  
+  <h1>display : none</h1>
+  <div class="div--none">div1</div>
+  <div class="div--none">div2</div>
+  <div>div3</div>
+
+</body>
+</html>

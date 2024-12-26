@@ -1,0 +1,39 @@
+<!-- 8. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li::first-letter {
+      color: aqua;
+    }
+    /* 위 적용한 first-letter 적용 가능 */
+    li:last-child::before {
+      content: "new";
+      color: white;
+      background-color: orange;
+      font-size: 20px;
+    }
+    li:last-child::after {
+      content: "new";
+      color: white;
+      background-color: violet;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <ul>
+      <li>리스트1
+        <span>span리스트</span>
+        <!-- 블록요소에서만 적용가능하기 때문에 변화 없음 -->
+      </li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+    </ul>
+  </main>
+</body>
+</html>
